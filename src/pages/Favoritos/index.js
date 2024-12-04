@@ -15,7 +15,7 @@ function Favoritos() {
     // Recuperamos el contexto de favoritos usando el custom hook useFavoritosContext
     const { favorito } = useFavoritosContext();
     
-    console.log(favorito);  // Solo para debug, muestra los elementos favoritos
+    //console.log(favorito);
 
    
 
