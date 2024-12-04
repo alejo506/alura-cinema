@@ -1,70 +1,116 @@
-# Getting Started with Create React App
+# 🎥 Alura Cinema
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ✨ Descripción breve:
+Alura Cinema es una aplicación desarrollada con React que permite gestionar y visualizar un sistema de videos con funcionalidades de favoritos. Utiliza rutas dinámicas, Context API y una API simulada para mejorar la experiencia del usuario.
 
-## Available Scripts
+## 🌟 Características
+- ✅ Gestión de favoritos mediante Context API y un Custom Hook.
+- 🚀 Rutas dinámicas y anidadas usando React Router.
+- 💻 Diseño modular con componentes reutilizables.
+- ❌ Página de error personalizada (404).
 
-In the project directory, you can run:
+## 🛠️ Tecnologías Utilizadas
+- ⚛️ **React**: Biblioteca principal para construir la interfaz de usuario.
+- 🗺️ **React Router**: Para la gestión de rutas.
+- 🌐 **Context API**: Para manejar el estado global de la aplicación.
+- 🛠️ **Custom Hook**: Creado para manejar la lógica de los favoritos.
+- 🎨 **CSS Modules**: Estilos encapsulados para componentes.
+- 📜 **JavaScript**: Lógica principal.
+- 📡 **My JSON Server**: Servicio en la nube utilizado como API simulada para proporcionar datos de videos y favoritos.
 
-### `npm start`
+## ⚙️ Instalación y Ejecución
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛠️ Creación del Proyecto
+Este proyecto fue generado usando el comando:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npx create-react-app alura-cinema
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aquí tienes el archivo README.md organizado y formateado con Markdown para que puedas pegarlo directamente:
 
-### `npm run build`
+markdown
+Copy code
+# 🎥 Alura Cinema
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Descripción breve:
+Alura Cinema es una aplicación desarrollada con React que permite gestionar y visualizar un sistema de videos con funcionalidades de favoritos. Utiliza rutas dinámicas, Context API y una API simulada para mejorar la experiencia del usuario.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🌟 Características
+- ✅ Gestión de favoritos mediante Context API y un Custom Hook.
+- 🚀 Rutas dinámicas y anidadas usando React Router.
+- 💻 Diseño modular con componentes reutilizables.
+- ❌ Página de error personalizada (404).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tecnologías Utilizadas
+- ⚛️ **React**: Biblioteca principal para construir la interfaz de usuario.
+- 🗺️ **React Router**: Para la gestión de rutas.
+- 🌐 **Context API**: Para manejar el estado global de la aplicación.
+- 🛠️ **Custom Hook**: Creado para manejar la lógica de los favoritos.
+- 🎨 **CSS Modules**: Estilos encapsulados para componentes.
+- 📜 **JavaScript**: Lógica principal.
+- 📡 **My JSON Server**: Servicio en la nube utilizado como API simulada para proporcionar datos de videos y favoritos.
 
-### `npm run eject`
+## ⚙️ Instalación y Ejecución
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 🛠️ Creación del Proyecto
+Este proyecto fue generado usando el comando:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npx create-react-app alura-cinema
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+🚀 Correr el Proyecto
+Asegúrate de estar en el directorio del proyecto.
 
-## Learn More
+Ejecuta el siguiente comando para iniciar la aplicación:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+📂 Estructura del Proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+public/
+├── img/               # 🖼️ Carpeta con imágenes estáticas del proyecto
+├── index.html         # 📄 Archivo HTML principal de la aplicación
 
-### Analyzing the Bundle Size
+src/
+├── components/        # 🧩 Componentes reutilizables
+│   ├── Banner/        # 🖼️ Componente de encabezado principal con imagen
+│   ├── Cabecera/      # 🧭 Cabecera de la aplicación
+│   ├── CabeceraLink/  # 🔗 Enlaces de navegación
+│   ├── Card/          # 🃏 Tarjetas para mostrar contenido visual
+│   ├── Container/     # 📦 Componente contenedor para layouts
+│   ├── Pie/           # ⚓ Pie de página
+│   ├── Titulo/        # 🏷️ Títulos reutilizables
+│
+├── context/           # 🌐 Manejo de Context API
+│   ├── Favoritos.js    # ❤️ Contexto para manejar favoritos y 🛠️ Custom Hook para manejar la lógica de favoritos
+│
+├── pages/             # 🗂️ Páginas principales de la aplicación
+│   ├── Favoritos/     # ⭐ Página para visualizar videos favoritos
+│   ├── Inicio/        # 🏠 Página de inicio con lista de videos
+│   ├── NotFound/      # ❌ Página para rutas no definidas (404)
+│   ├── PaginaBase/    # 🧱 Layout base para rutas anidadas
+│   ├── Player/        # ▶️ Reproductor de videos dinámico
+│
+├── index.js           # 🚀 Archivo principal para renderizar la aplicación
+├── index.css          # 🎨 Estilos globales de la aplicación
+├── routes.js          # 🗺️ Configuración de rutas de la aplicación
+├── jsconfig.json      # ⚙️ Configuración para mejorar la resolución de rutas en el proyecto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📝 Uso de la Aplicación:
 
-### Advanced Configuration
+🏠 Página de Inicio
+Lista de videos disponibles, mostrando sus títulos y miniaturas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+▶️ Player
+Permite reproducir un video seleccionado desde la lista.
 
-### Deployment
+⭐ Favoritos
+Página dedicada a administrar los videos favoritos agregados por el usuario.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+❌ Página de Error
+La página 404 se muestra si el usuario intenta acceder a una ruta no definida.

@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container p{
+    font-size: 50px;
+    align-self: center;
+    opacity: 0.2;
+}
+
